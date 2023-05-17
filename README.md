@@ -14,4 +14,4 @@ Open the terminal and run the `npm --version` command to make sure you are using
 
 ## Credits
 
-**This project was genereated by [React Nativ](https://reactnative.dev/) using npx [create-expo-app](https://reactnative.dev/docs/environment-setup).**
+**This project was genereated by [React Nativ](https://reactnative.dev/) using npx [create-expo-app](https://reactnative.dev/docs/environment-setup) on May 17, 2023.**
