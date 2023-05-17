@@ -2,6 +2,12 @@
 
 New project using React Native.
 
-## Usage
+## Quick start
 
-Clone the repo. Start development for every device with ```npm run web``` or ```yarn web```.
+### Development setup
+
+- npm 8 or higher
+- yarn
+- nvm
+
+Open the terminal and run the `npm --version` command to make sure you are using the right npm version. If it outputs 8 or higher, you are good to go! Now, run the `npm install` command to install the node_modules. You can start the development by running `npm run web` or `yarn web`.
