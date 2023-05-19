@@ -1,6 +1,5 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import 'react-native-gesture-handler';
-import Poke from '../Poke/Poke';
 import { NavigationService } from './NavigationService';
 import { useEffect, useState } from 'react';
 import PageViewScreen from '../PageView/PageViewScreen';
@@ -37,7 +36,6 @@ const Navigation = () => {
           initialParams={{ nav }}
         />
       ))}
-      <Tab.Screen name='Poke' component={Poke} />
     </Tab.Navigator>
   );
 };
