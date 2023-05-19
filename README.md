@@ -9,14 +9,12 @@ New project using React Native.
 - npm 8 or higher
 - nvm
 - npx
-- 
-Open the terminal and run the `npm --version` command to make sure you are using the right npm version. If it outputs 8 or higher, you are good to go! Now, run the `npm install` command to install the node_modules. You can start the development by running `npm run web`.
+- yarn
+Open the terminal and run the `npm --version` command to make sure you are using the right npm version. If it outputs 8 or higher, you are good to go! Now, run the `npm install` command to install the node_modules. You can start the development by running `npm run web` or `yarn web`.
 
 ### Connect with your Plone local server (disable CORS)
-```$
-docker run -it --rm --name=plone -p 8080:8080 -e SITE=Plone -e APPLY_PROFILES="plone.volto:default-homepage" -e CONFIGURE_PACKAGES=plone.volto.cors plone/plone-backend:6.0.1
-```
-
+`$ docker run -it --rm --name=plone -p 8080:8080 -e SITE=Plone -e APPLY_PROFILES="plone.volto:default-homepage" -e CONFIGURE_PACKAGES=plone.volto.cors plone/plone-backend:6.0.1`
+Also make sure you have your Docker image up and running with CORS disabled for development.
 
 ## Credits
 
