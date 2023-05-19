@@ -1,5 +1,6 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import 'react-native-gesture-handler';
+import { View, Text } from 'react-native';
 import { NavigationService } from './NavigationService';
 import { useEffect, useState } from 'react';
 import PageViewScreen from '../PageView/PageViewScreen';
@@ -11,7 +12,6 @@ const Navigation = () => {
   const getNavigation = async (service) => {
     try {
       const data = await service.getNavigation();
-
       setNavMenu(data);
     } catch (error) {
       console.error(error);
@@ -22,11 +22,19 @@ const Navigation = () => {
     getNavigation(navService);
   }, []);
 
+  const Test = () => {
+    return (
+      <View>
+        <Text>HomeTest</Text>
+      </View>
+    );
+  };
+
   const Tab = createMaterialTopTabNavigator();
 
-  console.log({ navMenu });
   return (
     <Tab.Navigator>
+      <Tab.Screen name='HomeTest' component={Test} />
       {navMenu.map((nav, idx) => (
         <Tab.Screen
           key={idx}
