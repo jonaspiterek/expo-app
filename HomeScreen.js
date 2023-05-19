@@ -1,5 +1,6 @@
 import { Button, Pressable, StatusBar, Text, View } from "react-native";
 import styles from "./StyleSheet";
+import APIRequest from "./APIResquest";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Press me</Text>
       </Pressable>
+      <APIRequest />
     </View>
   );
 };
